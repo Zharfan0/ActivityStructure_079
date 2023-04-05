@@ -11,7 +11,7 @@ struct AlamatDetail
 };
 
 struct Mahasiswa {
-	string nim[20];
+	string nim[14];
 	string nama[20];
 	AlamatDetail alamat;
 	int umur;
