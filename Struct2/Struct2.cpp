@@ -4,8 +4,8 @@ using namespace std;
 
 struct AlamatDetail
 {
-	string desa;
-	string kota;
+	string desa[20];
+	string kota[20];
 
 
 };
