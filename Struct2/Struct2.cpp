@@ -22,16 +22,18 @@ int main() {
 	Mahasiswa mhs;
 
 	cout << "Masukkan nim: ";
-	cin >> mhs.nim;
-	cout << "Masukkan nama: ";
-	cin >> mhs.nama;
-	cout << "Alamat: " << endl;
-	cout << "\tNama desa : ";
-	cin >> mhs.alamat.desa;
-	cout << "\tNama kota: ";
-	cin >> mhs.alamat.kota;
-	cout << "Masukkkan umur: ";
+	cin.getline(mhs[i].nim, 12);
+	cout << "Masukkan umur: ";
 	cin >> mhs.umur;
+	cin.ignore(1, '\n');
+	cout << "masukan nama: ";
+	cin.getline(mhs.nama, 20);
+	cout << "Alamat: ";
+	cout << "\tMasukan desa : ";
+	cin.getline(mhs.alamat.desa, 20);
+	cout << "\tMasukan Kota : ";
+	cin.getline(mhs.alamat.kota, 20);
+
 
 	cout << "\nNim : " << mhs.nim;
 	cout << "\nnama : " << mhs.nama;
